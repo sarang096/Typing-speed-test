@@ -1,0 +1,79 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    overflow: hidden;
+    background-color: rgb(36, 46, 56);
+}
+
+.team-container {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    gap: 20px; 
+    padding: 20px;
+    max-width: 80%; 
+    margin: 20px auto; 
+    overflow-x: auto; 
+}
+
+.team-member {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.team-photo {
+    width: 300px;
+    height: 300px;
+    object-fit: cover; 
+    border-radius: 50%; 
+    margin-bottom: 10px; 
+}
+.team-name {
+    font-size: 18px;
+    font-weight: 600;
+    color: black; 
+}
+
+/* Media Queries for Responsive Design */
+
+/* Small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .team-container {
+        flex-direction: column; 
+        gap: 10px;
+    }
+
+    .team-photo {
+        width: 120px; 
+        height: 120px;
+    }
+
+    .team-name {
+        font-size: 16px;
+    }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media only screen and (min-width: 601px) and (max-width: 768px) {
+    .team-container {
+        gap: 15px;
+    }
+
+    .team-photo {
+        width: 130px; 
+        height: 130px;
+    }
+
+    .team-name {
+        font-size: 17px;
+    }
+}

@@ -1,0 +1,109 @@
+.settings {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; 
+    align-items: flex-start;
+    height: 60vh;
+    background-color: #f0f0f0; 
+    text-align: left; 
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    border-radius: 8px; 
+    border: 2px solid #000; 
+    max-width: 600px; 
+    margin: auto; 
+    margin-top: 20%;
+    max-height: 600px;
+    overflow-y: auto;
+}
+
+.settings h1 {
+    width: 100%;
+    text-align: center; 
+    color: black; 
+}
+
+.setting-item {
+    display: flex;
+    flex-direction: row; 
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.setting-item label {
+    margin-right: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    color: black; 
+}
+
+.setting-item input[type="checkbox"] {
+    transform: scale(1.5); 
+}
+
+.setting-item input[type="number"] {
+    width: 60px;
+    padding: 5px;
+    font-size: 16px;
+    border: 2px solid #000;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    color: black; 
+}
+
+.setting-item select {
+    width: 160px;
+    padding: 5px;
+    font-size: 16px;
+    border: 2px solid #000;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    color: black; 
+}
+
+.button-style {
+    padding: 10px 20px;
+    margin-top: 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    background-color: #007bff; 
+    color: #fff; 
+    border-radius: 5px; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease; 
+}
+
+.button-style:hover {
+    background-color: #0056b3; 
+}
+
+
+.settings.dark-theme {
+    background-color: #333; 
+    color: black; 
+}
+
+.settings.dark-theme .setting-item label,
+.settings.dark-theme .setting-item input,
+.settings.dark-theme .setting-item select,
+.settings.dark-theme .button-style,
+.settings.dark-theme h1 {
+    color: black; 
+}
+
+.setting-item select {
+    width: 200px;
+    padding: 8px;
+    font-size: 16px;
+    border: 2px solid #000;
+    border-radius: 5px;
+    background-color: #fff;
+    color: #333;
+    transition: 0.3s ease;
+}
+
+.setting-item select:focus {
+    border-color: #007bff;
+    outline: none;
+}

@@ -1,0 +1,130 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    overflow: hidden;
+    background-color: rgb(36, 46, 56);
+}
+
+/* Contact Container Styles */
+.contact-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 600px; 
+    background-color: #f0f0f0; 
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.contact-container h1 {
+    margin-bottom: 20px;
+    font-size: 28px;
+    color: #000;
+}
+
+.contact-container p {
+    font-size: 16px;
+    color: #000;
+    margin-bottom: 20px;
+}
+
+.contact-container a {
+    color: #007bff;
+    text-decoration: none; 
+}
+
+.contact-container a:hover {
+    text-decoration: underline;
+}
+
+/* Contact Photo Styles */
+.contact-photo {
+    width: 200px; 
+    height: auto; 
+    border-radius: 10px; 
+    margin-top: 20px; 
+}
+
+/* Media Queries for Responsive Design */
+
+/* Small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .contact-container {
+        padding: 10px;
+        max-width: 90%; 
+        margin: 10px auto;
+    }
+
+    .contact-container h1 {
+        font-size: 22px;
+    }
+
+    .contact-container p {
+        font-size: 14px;
+    }
+
+    .contact-photo {
+        width: 150px; 
+    }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media only screen and (min-width: 601px) and (max-width: 768px) {
+    .contact-container {
+        padding: 15px;
+        max-width: 80%;
+        margin: 15px auto;
+        flex-direction: row; /* Add this line */
+        flex-wrap: wrap; /* Add this line to handle wrapping */
+    }
+
+    .contact-container h1 {
+        font-size: 24px;
+        width: 100%; /* Add this line to make heading full width */
+    }
+
+    .contact-container p {
+        font-size: 15px;
+        width: 100%; /* Add this line to make paragraph full width */
+    }
+
+    .contact-photo {
+        width: 180px; 
+        margin: 10px; /* Add this line for spacing */
+    }
+}
+
+/* Large devices (desktops, 769px and up) */
+@media only screen and (min-width: 769px) {
+    .contact-container {
+        flex-direction: row; /* Add this line */
+        flex-wrap: wrap; /* Add this line to handle wrapping */
+    }
+
+    .contact-container h1 {
+        font-size: 28px;
+        width: 100%; /* Add this line to make heading full width */
+    }
+
+    .contact-container p {
+        font-size: 16px;
+        width: 100%; /* Add this line to make paragraph full width */
+    }
+
+    .contact-photo {
+        width: 200px; 
+        margin: 10px; /* Add this line for spacing */
+    }
+}

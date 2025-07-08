@@ -1,0 +1,115 @@
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000; /* Ensures the navbar is on top of other elements */
+}
+
+.light-theme {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+.light-theme .button-style {
+  background-color: #007bff;
+  color: #fff;
+}
+
+.dark-theme {
+  background-color: #121212;
+  color: #ffffff;
+}
+
+.dark-theme .button-style {
+  background-color: #555555;
+  color: #fff;
+}
+
+#game-container,
+#text-to-type,
+.correct,
+.incorrect,
+.neutral,
+#feedback,
+#controls,
+#message-area,
+.button-style,
+.cursor,
+.box {
+  color: black; 
+}
+
+
+#game-container {
+  padding: 20px;
+  margin: 0 auto; 
+  display: flex;
+  justify-content: center; 
+  align-items: center; 
+  height: 100vh; 
+}
+
+#text-to-type {
+  font-size: 20px;
+}
+
+.correct {
+  color: green;
+}
+
+.incorrect {
+  color: red;
+}
+
+.neutral {
+  color: gray;
+}
+
+#feedback {
+  margin-top: 20px;
+}
+
+#controls {
+  margin-top: 20px;
+}
+
+.button-style {
+  padding: 10px 20px;
+  margin-right: 10px;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+#message-area {
+  margin-top: 20px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.cursor {
+  border-left: 2px solid;
+  animation: blink 1s step-end infinite;
+}
+
+/* Box Styling */ 
+.box { 
+  padding: 20px; 
+  border-radius: 8px; 
+  background-color: #f0f0f0; 
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); 
+  text-align: center; 
+  width: 80%;  
+  max-width: 600px; 
+  z-index: 1; 
+  
+}
+
+@keyframes blink {
+  from, to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: black; 
+  }
+}

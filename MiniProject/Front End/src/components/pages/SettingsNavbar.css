@@ -1,0 +1,40 @@
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: #333;
+  padding: 10px;
+  color: white;
+  border-radius: 1%;
+  margin-top: 3.37%;  
+}
+
+.navbar-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.button-container button {
+  background-color: #555;
+  color: white;
+  border: none;
+  padding: 5px;
+  margin: 0 2px;
+  cursor: pointer;
+}
+
+.button-container button:hover {
+  background-color: #777;
+}
+
+input[type="number"], select {
+  padding: 5px;
+  background-color: #444;
+  color: white;
+  border: 1px solid #777;
+}
+
+input[type="checkbox"] {
+  transform: scale(1.2);
+}

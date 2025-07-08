@@ -1,0 +1,111 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    margin-top: 10%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    overflow: hidden;
+    background-color: rgb(36, 46, 56);
+}
+
+.inspiration {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #f0f0f0; 
+    text-align: center; 
+    padding: 10px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    border-radius: 8px; 
+    border: 2px solid #000; 
+    max-width: 700px;
+    height: auto; 
+    margin: auto; 
+    margin-top: 10%;
+    color: #000; 
+    overflow-y: auto; 
+    max-height: 80vh; 
+}
+
+.inspiration h2 {
+    font-size: 22px;
+    font-weight: 700;
+    margin-bottom: 10px; 
+}
+
+.inspiration p {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 10px; 
+}
+.inspiration a {
+    color: #007bff; 
+    text-decoration: none; 
+}
+
+.inspiration a:hover {
+    text-decoration: underline; 
+}
+
+/* Media Queries for Responsive Design */
+
+/* Small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .inspiration {
+        padding: 10px;
+        max-width: 90%;
+        margin: 5px auto;
+        max-height: 70vh;
+    }
+
+    .inspiration h2 {
+        font-size: 18px;
+    }
+
+    .inspiration p {
+        font-size: 14px;
+    }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media only screen and (min-width: 601px) and (max-width: 768px) {
+    .inspiration {
+        padding: 15px;
+        max-width: 80%;
+        margin: 10px auto;
+        max-height: 75vh;
+    }
+
+    .inspiration h2 {
+        font-size: 20px;
+    }
+
+    .inspiration p {
+        font-size: 15px;
+    }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media only screen and (min-width: 769px) {
+    .inspiration {
+        padding: 20px;
+        max-width: 600px;
+        margin: 20px auto;
+        max-height: 80vh;
+    }
+
+    .inspiration h2 {
+        font-size: 22px;
+    }
+
+    .inspiration p {
+        font-size: 16px;
+    }
+}
