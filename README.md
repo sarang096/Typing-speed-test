@@ -47,13 +47,19 @@ The application will start on `http://localhost:3000` (or the port you specify).
 
 ```
 Typify1/
-├── public/
-├── src/
-│   ├── components/
-│   ├── App.js
-│   └── index.js
-├── package.json
-└── .git/
+├── frontend/           # React-based frontend
+│   ├── public/
+│   ├── src/
+│   └── package.json
+│
+├── backend/            # Node.js + Express backend
+│   ├── models/
+│   ├── routes/
+│   └── server.js
+│
+├── .git/
+└── README.md
+
 ```
 
 ---
