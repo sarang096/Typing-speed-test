@@ -1,97 +1,108 @@
-## 🖹 Typify1
+## 🖹 Typify1 – Typing Speed Test App
 
-A simple **Typing Speed Test** web application built using **Node.js**, **Express**, and **React**. It helps users measure how fast and accurately they can type by offering real-time feedback and performance metrics.
+A **full-stack Typing Speed Test** web application built with **React (frontend)** and **Node.js + Express + MongoDB (backend)**.
+
+This project is organized under a `miniproject` folder that separates frontend and backend codebases for better modularity.
 
 ---
 
 ### 🚀 Features
 
-* Interactive typing test interface
-* Real-time speed and accuracy tracking
-* Backend built with Express and MongoDB
-* API integration using Axios
-* Clean, modular structure for easy extension
+* Typing test with real-time feedback
+* Accuracy and speed tracking
+* Frontend built with React
+* Backend API with Express and MongoDB
+* Clear folder separation for frontend and backend
 
 ---
 
-### 📦 Installation
-
-1. **Clone the repository**
-
-   ```bash
-   git clone https://github.com/your-username/typify1.git
-   cd typify1
-   ```
-
-2. **Install dependencies**
-
-   ```bash
-   npm install
-   ```
-
----
-
-### 🧑‍💻 Usage
-
-To run the app locally:
-
-```bash
-npm start
-```
-
-The application will start on `http://localhost:3000` (or the port you specify).
-
----
-
-### 📁 Project Structure (simplified)
+### 📁 Folder Structure
 
 ```
 Typify1/
-├── frontend/           # React-based frontend
-│   ├── public/
-│   ├── src/
-│   └── package.json
-│
-├── backend/            # Node.js + Express backend
-│   ├── models/
-│   ├── routes/
-│   └── server.js
-│
-├── .git/
-└── README.md
-
+└── miniproject/
+    ├── frontend/           # React app
+    │   ├── public/
+    │   ├── src/
+    │   └── package.json
+    │
+    └── backend/            # Node.js + Express + MongoDB backend
+        ├── models/
+        ├── routes/
+        ├── server.js
+        └── package.json
 ```
 
 ---
 
-### 📚 Technologies Used
+### 📦 Setup Instructions
 
-* **React** – frontend UI
-* **Express** – backend API
-* **MongoDB** – data storage (via Mongoose)
-* **Axios** – HTTP requests
-* **Cookie-parser** – cookie handling middleware
+#### 1. Clone the repository
+
+```bash
+git clone https://github.com/your-username/Typify1.git
+cd Typify1/miniproject
+```
+
+#### 2. Install dependencies
+
+**Frontend:**
+
+```bash
+cd frontend
+npm install
+```
+
+**Backend:**
+
+```bash
+cd ../backend
+npm install
+```
 
 ---
 
-### 🛠️ Scripts
+### 🧑‍💻 Running the App
 
-You can use the following NPM script:
+**Start the Backend Server:**
 
-* `npm start` – Start the application
-* `npm test` – Placeholder for testing (not implemented)
+```bash
+cd backend
+npm start
+```
+
+**Start the Frontend Dev Server:**
+
+```bash
+cd ../frontend
+npm start
+```
+
+Then go to `http://localhost:3000` in your browser.
 
 ---
 
-### 🧪 Future Improvements
+### 🔧 Technologies Used
 
-* Add user login & profiles
-* Maintain user history and scores
-* Gamify typing with levels & ranks
-* Add mobile responsiveness
+* **Frontend:** React, Axios
+* **Backend:** Node.js, Express
+* **Database:** MongoDB (via Mongoose)
+* **Middleware:** Cookie-parser
+
+---
+
+### ✅ To Do
+
+* Authentication and user profiles
+* Leaderboard to track best typing scores
+* Add difficulty levels or word sets
+* Deploy to Render / Vercel / Railway
 
 ---
 
 ### 📄 License
 
-This project is open-source and free to use under the [MIT License](LICENSE).
+This project is open-source and licensed under the [MIT License](LICENSE).
+
+---
+
